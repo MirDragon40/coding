@@ -49,7 +49,7 @@ public class ActionExample : MonoBehaviour
         // 매개변수를 최대 16개 까지 입력으로 받을 수 있다.
         // Action<string,int, float ...>
 
-        // 람다식이란 수학 함수를 하나의 식(코드 조각)으로 표현한 것]
+        // 람다식이란 수학 함수를 하나의 식(코드 조각)으로 표현한 것
         // f(x) = x + 3
         // F(6) => 9
         // F() = 4
