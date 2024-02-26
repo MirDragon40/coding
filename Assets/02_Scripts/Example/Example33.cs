@@ -2,13 +2,13 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Exmaple33 : MonoBehaviour
+public class Example33 : MonoBehaviour
 {
 
 
     void Start()
     {
-        // Á¤¼öÇü °¡º¯ ¹è¿­ ÃÊ±âÈ­ ¹æ½Ä
+        // ì •ìˆ˜í˜• ê°€ë³€ ë°°ì—´ ì´ˆê¸°í™” ë°©ì‹
         int[][] numbers = new int[3][]
         {
             new int[] { 1, 2, 3 },
@@ -16,12 +16,12 @@ public class Exmaple33 : MonoBehaviour
             new int[] { 100, 200, 300, 400 ,500}
         };
 
-        // Q. À§ °¡º¯ ¹è¿­ÀÇ ¸ğµç ¾ÆÀÌÅÛÀ» Ãâ·ÂÇØº¸¼¼¿ä.
+        // Q. ìœ„ ê°€ë³€ ë°°ì—´ì˜ ëª¨ë“  ì•„ì´í…œì„ ì¶œë ¥í•´ë³´ì„¸ìš”.
 
-        Debug.Log(numbers.Length);  // 3 -> 2Â÷¿ø(¼¼·Î)ÀÇ Å©±â¸¦ ¾Ë ¼ö ÀÖ±¸³ª.
+        Debug.Log(numbers.Length);  // 3 -> 2ì°¨ì›(ì„¸ë¡œ)ì˜ í¬ê¸°ë¥¼ ì•Œ ìˆ˜ ìˆêµ¬ë‚˜.
 
-        // ¹è¿­ ¾È¿¡ ¹è¿­ÀÌ ÀÖ´Â ±¸Á¶´Ù. 
-        // 1Â÷¿ø(°¡·Î)ÀÇ Å©±â Á¶È¸.
+        // ë°°ì—´ ì•ˆì— ë°°ì—´ì´ ìˆëŠ” êµ¬ì¡°ë‹¤. 
+        // 1ì°¨ì›(ê°€ë¡œ)ì˜ í¬ê¸° ì¡°íšŒ.
         Debug.Log(numbers[0].Length);  // 3
         Debug.Log(numbers[1].Length);  // 4
         Debug.Log(numbers[2].Length);  // 5
