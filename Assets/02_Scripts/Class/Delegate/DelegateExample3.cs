@@ -7,6 +7,7 @@ public class DelegateExample3 : MonoBehaviour
 {
     private delegate void ExDelegate();
     // ExDelegate 라는 대리자 타입은 "void 이름()" 형태의 메서드를 참조할 수 있다.
+
     void Start()
     {
         // 델리게이트 멀티캐스트: 여러 개의 메서드를 담을 수 있다는 뜻.
@@ -16,10 +17,22 @@ public class DelegateExample3 : MonoBehaviour
         morningRotuine += Shower;  // +=(덧셈 대입 연산자)를 이용해서 추가를 
 
 
-        morningRotuine -= DrinkWater;
+        morningRotuine -= DrinkWater; // -=(뺄셈 대입 연산자)를 이용해서 빼기가 가능
+        //morningRotuine -= WakeUp;
+        //morningRotuine -= Shower;
+
+        // 호출 방법 2가지
+        // 1. () 가로 열고 닫고 문법
+        // 2. Invoke()를 이용한 호출
 
 
-        morningRotuine();
+        if (morningRotuine != null)    // 방어코드 (null 검사)
+        {
+            // morningRotuine();
+            morningRotuine.Invoke();
+        }
+
+        morningRotuine?.Invoke();   // null이 아닐때만 호출. 교재 708p 참고. 나중에 익숙해질때 사용.
     }
 
     private void WakeUp()
