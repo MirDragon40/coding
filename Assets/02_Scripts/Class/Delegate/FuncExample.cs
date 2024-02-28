@@ -23,7 +23,5 @@ public class FuncExample : MonoBehaviour
         {
             return num % 2 == 1;
         }
-
-
     }
 }
